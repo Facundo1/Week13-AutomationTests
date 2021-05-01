@@ -3,7 +3,7 @@ describe('Go to wikipedia through Google.com', () => {
     browser.url('https://www.google.com/')
     let userInput = $('.gLFyf')
     userInput.setValue('Wikipedia')
-    let wikiResult = $('//h3[@class="LC20lb DKV0Md"]')
+    let wikiResult = $('.LC20lb')
     userInput.keys('Enter')
     wikiResult.click()
     browser.pause(3000)
